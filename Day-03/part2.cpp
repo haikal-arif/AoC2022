@@ -76,9 +76,9 @@ int getSumOfLinePriorities(std::string line1, std::string line2, std::string lin
         compartment3.insert({item, true});
         
         if(('a' <= item) && (item <= 'z'))
-            priorities += (item - 'a') + 1;
+            priorities += item - 'a' + 1;
         else if(('A' <= item) && (item <= 'Z'))
-            priorities += (item - 'A') + 27;
+            priorities += item - 'A' + 27;
     }
     return priorities;
 
